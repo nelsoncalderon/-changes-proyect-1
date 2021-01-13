@@ -1,0 +1,15 @@
+.sticky {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 300;
+   
+  }
+
+  
+  
+  .sticky + .contenido-principal{
+    padding-top: 100px;
+    transition: 0.5s;
+  }

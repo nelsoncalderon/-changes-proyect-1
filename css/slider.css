@@ -1,0 +1,317 @@
+
+:root {
+  --primario:#1D1E23;
+  --segundario: #fcdf00;
+  --terciario: #f2f2f2;
+  --texto:'Bangers', cursive;
+}
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+
+  }
+  
+  
+  .mySlides {
+    display: none;
+  }
+  
+  
+  /* Caption text */
+
+  .banner {
+    position: absolute;
+    bottom: 200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 700px;
+    justify-content: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 200;
+    font-family: 'Mitr', sans-serif;
+  }
+
+  .text h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+  }
+
+  
+
+.btn-ghost {
+    display: inline-block;
+    border: 2px solid var(--segundario);
+    padding: 15px 50px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--primario);
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--segundario);
+    transition: color 0.5s, background 0.5s; 
+    font-family: var(--texto);
+    font-size: 1.2em;
+ }
+
+ .btn-ghost.round {
+   border-radius: 30px;
+ }
+ 
+ .btn-ghost:hover{
+    border: 2px solid var(--terciario);
+    color: var(--terciario);
+    background-color: transparent;
+ }
+
+.btn-ghost:active{
+
+  box-shadow: inset 0 0 20px var(--terciario);
+  
+}
+
+.hola  {
+       background: none;
+       width: 100%;
+       display: grid;
+       position: absolute;
+       grid-template-columns: 100%;
+       justify-items: flex-end;
+       margin-top: 262px;
+}
+
+#hola {
+    background: none;
+    width: 100%;
+    z-index: 200;
+}
+
+
+.figura {
+    background: none;
+    width: 100%;
+    display: grid;
+    position: absolute;
+    grid-template-columns: 100%;
+    justify-items: flex-end;
+    margin-top: 470px;
+    z-index: 400;
+}
+  
+  /* The dots/bullets/indicators */
+  .botones {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: -20px;
+    background: none;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    z-index: 200;
+  }
+
+
+  .dot {
+
+    height: 15px;
+    width: 15px;
+    margin-bottom: 10px;
+    background-color:#2525257a;
+    border-radius: 50%;
+    display: block;
+    transition: all 300ms;
+   
+  }
+  
+  .active {
+    background-color: #fcdf00;
+    transition: all 200ms;
+    transform: scale(1.4);
+    
+   
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 1.0s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @media screen and (max-width:1440px){
+
+  .banner {
+    bottom: 240px;
+   
+  }
+
+
+
+  }
+
+  @media screen and (max-width:1024px){
+
+    #hola {
+      width: 100%;
+  }
+
+  .banner {
+    bottom: 160px;
+   
+  }
+
+  .figura {
+    margin-top: 420px;
+}
+
+.hola  {
+  margin-top: 200px;
+}
+  
+}
+
+@media screen and (max-width:768px){
+   
+  .banner {
+
+    bottom: 150px;
+   
+  }
+
+  .text h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .btn-ghost {
+    padding: 7px 20px;
+    font-size: 1.2em;
+ }
+
+
+  .figura {
+    margin-top: 250px;
+}
+
+.hola  {
+  margin-top: 150px;
+}
+
+.dot {
+
+  height: 7px;
+  width: 7px;
+
+ 
+}
+
+}
+
+@media screen and (max-width:425px){
+
+  .banner {
+
+    bottom: 70px;
+   
+  }
+
+  .text h1 {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  .btn-ghost {
+    padding: 7px 15px;
+    font-size: 0.8em;
+ }
+
+
+  .figura {
+    margin-top: 100px;
+    margin-left: -80px;
+}
+
+ .lds-ripple {
+  width: 1px;
+  height: 1px;
+
+}
+
+.hola  {
+  margin-top: 85px;
+}
+
+.dot {
+
+  height: 7px;
+  width: 7px;
+
+ 
+}
+}
+
+@media screen and (max-width:375px){
+
+  .hola  {
+    margin-top: 72px;
+  }
+
+  .figura {
+    display: none;
+}
+}
+
+@media screen and (max-width:320px){
+
+  .banner {
+
+    bottom: 50px;
+   
+  }
+
+  .text h1 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .btn-ghost {
+    padding: 7px 15px;
+    font-size: 0.7em;
+ }
+
+
+ .figura {
+  display: none;
+}
+
+  .hola  {
+    margin-top: 62px;
+  }
+
+  .dot {
+
+    height: 7px;
+    width: 7px;
+    margin-right: -10px;
+   
+  }
+}
+
+  

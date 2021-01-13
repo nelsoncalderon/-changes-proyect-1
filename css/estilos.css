@@ -1,0 +1,41 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  overflow: hidden;
+  color: rgb(255, 250, 250);
+  text-align: center;
+  
+}
+
+/* .banner {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-color:#1D1E23;
+  background-size: cover;
+  background-position:center;
+  transition: all .1s ease-in-out;
+  background-image: url(../img/1.jpg);
+  animation: banner 28s infinite linear;
+} */
+
+/* .banner-container{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color:rgba(0,22,40,.6);
+  display:grid;
+  grid-template-columns: 500px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} */
+
