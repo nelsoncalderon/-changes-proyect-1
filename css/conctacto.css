@@ -1,0 +1,136 @@
+.container4{
+ 
+    margin: 0;
+
+    position: relative;
+    color: var(--primario);
+    display:grid;
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: minmax(300px, auto);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--texto2);
+     
+    }
+
+.fondo1 {
+         width: 100%;
+         height: 500px;
+         color: var(--terciario);
+         background-color: var(--primario);  
+}
+
+.fondo1 iframe {
+    width: 100%;
+    height: 500px;
+}
+
+
+.texto1 {
+    width: 100%;
+    height: 500px;
+    padding: 100px 40px;
+    color: var(--terciario);
+    background-color: var(--primario);  
+}
+.texto1 h3 {
+    font-size: 30px;
+}
+
+.texto1 p {
+    text-align: justify;
+    padding: 0px 50px;
+}
+.texto2 p{
+    text-align: center;
+}
+
+.texto1 a{
+    display: inline-block;
+    padding: 10px 30px;
+    width: 150px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid var(--terciario);
+    color: var(--terciario);
+    text-transform: uppercase;
+    text-decoration: none;
+    background: none;
+    transition: color 0.5s, background 0.5s; 
+    font-family: var(--texto);
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 1.0em;
+    outline: none;
+    font-family: var(--texto2);
+  }
+
+  .texto1 a:active{
+    transition: all 100ms;
+    transform: scale(0.9);
+    color:black;
+    outline: none;
+  }
+  
+  .texto1 a:hover{
+    color: var(--primario);
+    background-color: var(--terciario);
+  }
+
+
+  @media screen and (max-width: 1024px) {
+
+    .texto1 {
+     
+        padding: 70px 40px;
+    }
+
+  }
+
+  @media screen and (max-width: 768px){
+
+    .texto1 {
+     
+        padding: 100px 5px;
+    }
+
+    .texto1 p{
+     
+    font-size: 15px;
+    }
+
+    .texto2 p{
+     
+        font-size: 13px;
+        }
+
+
+  }
+
+  @media screen and (max-width: 425px){
+    .container4{
+        grid-template-columns: 1fr; 
+        }
+  }
+
+  @media screen and (max-width: 320px){
+    .texto1 {
+    
+        padding: 80px 10px; 
+    }
+
+    .texto1 p{
+    
+        padding: 0px 10px; 
+    }
+
+
+    .texto1{
+        font-size: 15px;
+    }
+      .texto2 p{
+       font-size: 10px;
+      }
+  }

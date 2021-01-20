@@ -1,0 +1,155 @@
+:root {
+  --primario:#1E1F26;
+  --segundario: #FFDD40;
+  --terciario: #f2f2f2;
+  --texto1:'Bangers', cursive;
+  --texto2:'Mitr', sans-serif;
+}
+
+.container3 {
+  margin: 0;
+  position: relative;
+  color: var(--primario);
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(300px, auto);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: var(--texto2);
+   
+  }
+
+.servicios {
+
+   padding: 30px 100px;
+   color: var(--terciario);
+   background-color: var(--primario);
+ 
+   
+  }
+
+  .servicios h3{
+    margin-top: 50px;
+    font-size: 30px;
+    
+   }
+
+
+.servicios p{
+  padding: 30px 80px;
+  text-align: justify;
+
+}
+
+.servicios a{
+  display: inline-block;
+  padding: 10px 30px;
+  width: 220px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid var(--terciario);
+  color: var(--terciario);
+  text-transform: uppercase;
+  text-decoration: none;
+  background: none;
+  transition: color 0.5s, background 0.5s; 
+  font-family: var(--texto);
+  border-radius: 30px;
+  margin-top: 15px;
+  margin-left: 20px;
+  font-size: 1.0em;
+  outline: none;
+  font-family: var(--texto2);
+}
+
+.servicios a:active{
+  transition: all 100ms;
+  transform: scale(0.9);
+  color:black;
+  outline: none;
+}
+
+.servicios a:hover{
+  color: var(--primario);
+  background-color: var(--terciario);
+}
+
+.todoslosservicios{
+  color: var(--terciario);
+  background-color: var(--segundario);
+  padding: 100px 20px;
+  
+ }
+
+
+ @media screen and (max-width: 1024px ){
+
+  .servicios {
+    padding: 30px 10px;
+    
+   }
+
+   .servicios a{
+    width: 190px;
+    font-size: 0.8em;
+   
+  
+  }
+ }
+
+ @media screen and (max-width: 768px ){
+
+  .servicios {
+    padding: 30px 20px;
+    
+   }
+
+   .servicios  p{
+    padding: 10px 40px;
+    
+   }
+
+   .servicios a{
+    width: 200px;
+    font-size: 0.7em;
+   
+  
+  }
+
+ }
+
+ @media screen and (max-width: 425px ){
+
+  .servicios {
+    padding: 60px 20px; 
+    
+   }
+
+   .servicios p{
+    
+    text-align: justify;
+    
+    }
+
+    
+   .servicios a{
+    width: 190px;
+    font-size: 0.8em;
+   
+  
+  }
+
+ }
+
+ @media screen and (max-width: 320px){
+  .servicios {
+    padding: 10px 4px; 
+    
+   }
+
+   .servicios p{
+    font-size: 14px;
+    
+   }
+ }
