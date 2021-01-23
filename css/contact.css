@@ -17,7 +17,10 @@ body{
 
 .header--contact {
   background-color: #0d0d0d;
-  height: 100px;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
 }
 
 .header__logo img{
@@ -99,11 +102,12 @@ body{
 }
 
 .accordion__btn {
-  background-color: #eee;
-  color: #444;
+  background-color: #ffdd40;
+  color: #0d0d0d;
+  border-radius: 8px;
   cursor: pointer;
   padding: 18px;
-  margin-bottom: 5px;
+  margin-top: 5px;
   width: 100%;
   text-align: left;
   border: none;
@@ -111,16 +115,27 @@ body{
   transition: 0.4s;
 }
 
+
+
 .active,
 .accordion__btn:hover {
   background-color: #ccc;
+  color: #000000;
+}
+
+.active{
+  background-color: #0d0d0d; 
+  color: white;
+  border-radius: 8px 8px 0 0;
 }
 
 .accordion__content {
-  padding: 0 18px;
+  padding: 18px;
   background-color: white;
   display: none;
   overflow: hidden;
+  margin-bottom: 5px;
+  border-radius: 0px 0px 8px 8px;
 }
 
 .consultoria {
@@ -250,9 +265,7 @@ body{
     display: none;
   }
 
-  .main{
-    /* text-align: center; */
-  }
+ 
 
     .main--info h2{
   font-size: 1.8rem;
