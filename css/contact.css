@@ -5,6 +5,11 @@
   font-family: "Inter", sans-serif;
 }
 
+body {
+  background-color: rgb(24, 23, 23);
+  color: white;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -63,6 +68,8 @@ p {
   padding: 20px;
 }
 
+/*--------- Questions ----------- */
+
 .questions {
   display: grid;
   justify-content: center;
@@ -110,6 +117,73 @@ p {
   padding: 10px;
 }
 
+/*--------- Normas ----------- */
+
+.norma {
+  background-color: #0d0d0d;
+  background-image: url("https://images.pexels.com/photos/3230538/pexels-photo-3230538.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  padding: 150px 0 200px 0;
+}
+
+#norma {
+  text-align: center;
+}
+
+.norma_title {
+  font-size: 2.2rem;
+}
+
+.normas__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 280px);
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  gap: 50px;
+}
+
+.normas__container div {
+  background-color: rgba(228, 228, 228, 0.9);
+  color: #0d0d0d;
+  text-align: center;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.icon {
+  font-size: 3em;
+  color: #ca0d0d;
+}
+
+.normas__container p {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.norma_button--download {
+  background: #ffdd40;
+  text-decoration: none;
+  padding: 5px 20px;
+  display: inline-block;
+  color: black;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.norma_button--download:hover {
+  background: #0d0d0d;
+  color: #ffdd40;
+}
+
+/*--------- @Medias ----------- */
+
 @media (max-width: 860px) {
   .header__menu {
     display: none;
@@ -126,5 +200,11 @@ p {
   .questions {
     grid-template-columns: 1fr 1fr;
     margin-bottom: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .normas__container {
+    margin-top: 90px;
   }
 }
