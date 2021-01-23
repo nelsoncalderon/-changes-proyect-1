@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  font-weight: 300;
 }
 
 body {
@@ -179,6 +180,51 @@ p {
 
 .norma_button--download:hover {
   background: #0d0d0d;
+  color: #ffdd40;
+}
+
+/*--------- Footer ----------- */
+
+.footer--contact {
+  background-color: #000000;
+  text-align: center;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 100px 0;
+}
+
+.footer__title--categorie {
+  font-size: 1.4rem;
+  color: #ffdd40;
+}
+
+.footer__categorie {
+  list-style: none;
+  text-align: center;
+}
+.footer__categorie li {
+  padding: 10px;
+}
+.footer__categorie li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__content--redes {
+  padding-bottom: 40px;
+}
+
+.footer--redes {
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.footer--redes:hover {
   color: #ffdd40;
 }
 
