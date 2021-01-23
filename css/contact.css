@@ -6,9 +6,8 @@
   font-weight: 300;
 }
 
-body {
-  background-color: rgb(24, 23, 23);
-  color: white;
+body{
+  background-color: #f3f3f3;
 }
 
 .container {
@@ -19,6 +18,11 @@ body {
 .header--contact {
   background-color: #0d0d0d;
   height: 100px;
+}
+
+.header__logo img{
+  width: 180px;
+  height: auto;
 }
 
 .header__container {
@@ -41,7 +45,7 @@ body {
 .header__menu ul li a {
   text-decoration: none;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .header__button--login {
@@ -54,19 +58,30 @@ body {
   cursor: pointer;
 }
 
+/*--------- Main ----------- */
+
+
 .main {
   display: grid;
   grid-template-columns: minmax(320px, 500px);
   justify-content: center;
+  margin-top: 150px;
+  height: 80vh;
 }
 
 .main__container--img img {
   width: 100%;
+  max-width: 500px;
+  height: auto;
 }
 
-.main--info h2,
-p {
-  padding: 20px;
+.main--info h2{
+  font-size: 2.8rem;
+}
+
+.main--info p {
+  font-size: 1.5rem;
+  padding: 20px 20px 20px 0;
 }
 
 /*--------- Questions ----------- */
@@ -234,13 +249,25 @@ p {
   .header__menu {
     display: none;
   }
+
+  .main{
+    /* text-align: center; */
+  }
+
+    .main--info h2{
+  font-size: 1.8rem;
+}
+
+.main--info p {
+  font-size: 1.2rem;
+  padding: 20px;
+  margin: 20px 0;
+}
 }
 
 @media (min-width: 768px) {
   .main {
     grid-template-columns: 1fr 1fr;
-    margin-top: 200px;
-    margin-bottom: 200px;
   }
 
   .questions {
