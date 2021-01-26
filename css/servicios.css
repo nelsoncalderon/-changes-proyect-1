@@ -1,0 +1,720 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  :root {
+    --primario:#1E1F26;
+    --segundario: #FFDD40;
+    --terciario: #f2f2f2;
+    --texto1:'Bangers', cursive;
+    --texto2:'Mitr', sans-serif;
+  }
+
+  .container-servicios {
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/2w.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: var(--texto2);
+    color: var(--terciario);
+  }
+
+  .container-servicios h4 {
+    padding-top: 70px;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .N-servicios{
+    padding: 30px 120px;
+  }
+
+  .N-servicios p{
+    font-size: 20px;
+    padding-bottom: 70px;
+  }
+
+
+  .container-servicios2{
+    width: 100%;
+    background-color: var(--primario);
+  }
+
+  .introduccion{
+    text-align: center;
+    color: var(--terciario);
+    padding: 20px 200px;
+    height: 270px;
+    font-family: var(--texto2);
+  }
+
+  .introduccion h4{
+    padding-top: 30px;
+    font-size: 26px;
+  }
+
+  .introduccion p {
+    padding: 20px 0px;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+
+  .container-laboratorio{
+    background: var(--segundario);
+    width: 100%;
+    padding: 40px 180px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    text-align: center;
+    font-family: var(--texto2);
+    color: var(--terciario);
+  }
+
+  .laboratorio {
+    background-image: url(../img/imagen.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 300px;
+   
+  }
+
+  .laboratorio h4{
+    font-size: 26px;
+  }
+
+  .laboratorio p {
+    padding: 20px 0px;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+
+  .container {
+    position: relative;
+    width: 100%;
+  }
+  
+ 
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--primario);
+    overflow: hidden;
+    width: 0;
+    height: 300px;
+    transition: .5s ease;
+    overflow-y: scroll;
+  }
+
+  .text-lab-over {
+    padding: 30px 40px;
+    text-align: justify;
+   }
+  
+   .text-lab-over h4{
+     text-align: center;
+     margin-bottom: 20px;
+    font-size: 30px;
+   }
+
+   .text-lab-over li {
+    margin-bottom: 20px;
+   }
+
+ 
+  
+  .container  .overlay  {
+ 
+  }
+
+  .container  .text-lab {
+    display: block;
+  }
+
+  
+  
+  .text-lab {
+    background-color: var(--primario);
+    height: 300px;
+    color: var(--terciario);
+    font-size: 15px;
+    position: absolute;
+    text-align: center;
+    padding: 50px 50px;
+  
+  }
+
+  .text-lab h4{
+    padding-bottom: 10px;
+    font-size: 30px;
+  }
+  .text-lab li {
+    text-align: justify;
+    padding: 10px 0px;
+  }
+
+
+  .text-lab h4 {
+    font-size: 30px;
+  }
+
+  .text-lab p {
+    text-align: justify;
+    padding: 10px 0px;
+  }
+
+  .overlay::-webkit-scrollbar{
+    width: 10px;
+    background:var(--primario);
+    
+  }
+  
+  .overlay::-webkit-scrollbar-thumb{
+    background: var(--terciario); 
+  }
+
+ .abrir button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #FCDE00;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  cursor: pointer;
+  border-radius: 50%;
+  color:black;
+  border: none;
+  outline: none;
+  font-family: var(--texto2);
+  transition: all 300ms;
+  transition: 0.5s;
+  }
+
+  .abrir button:hover{
+
+    color: var(--terciario);
+    background-color: var(--primario);
+    border: 2px solid var(--terciario);
+  
+  }
+
+  .abrir button:active{
+    transition: all 100ms;
+    transform: scale(0.9);
+    color:black;
+    outline: none;
+  }
+
+  .cerrar button {
+    position: absolute;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: 2px solid var(--terciario);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    border-radius: 50% ;
+    color:var(--terciario);
+    outline: none;
+    font-family: 'Viga', sans-serif;
+    transition: all 300ms;
+    transition: 0.5s;
+  }
+
+  .cerrar button:active{
+    transition: all 100ms;
+    transform: scale(0.9);
+    box-shadow: inset 0 0 20px var(--terciario); 
+    color:var(--terciario);
+    outline: none;
+  }
+
+
+
+  .container-perforaciones{
+    background: var(--segundario);
+    width: 100%;
+    padding: 40px 180px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    text-align: center;
+    font-family: var(--texto2);
+    color: var(--terciario);
+  }
+
+  .perforaciones {
+    background-image: url(../img/perf.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 300px;
+   
+  }
+
+  .perforaciones h4{
+    font-size: 26px;
+  }
+
+  .perforaciones p {
+    padding: 50px 0px;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  
+  .overlay-per {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--primario);
+    overflow: hidden;
+    width: 0;
+    height: 300px;
+    transition: .5s ease;
+    overflow-y: scroll;
+  }
+  
+  .text-per-over {
+    padding: 30px 40px;
+    text-align: justify;
+   }
+  
+   .text-per-over h4{
+     text-align: center;
+     margin-bottom: 20px;
+    font-size: 30px;
+   }
+
+   .text-per-over li {
+    margin-bottom: 20px;
+   }
+
+  .container  .text-per {
+    display: block;
+  }
+
+  
+  
+  .text-per {
+    color: var(--terciario);
+    font-size: 15px;
+    position: absolute;
+    text-align: center;
+    display: none;
+    padding: 50px 50px;
+    background-color: var(--primario);
+    height: 300px;
+  }
+
+  .text-per h4{
+    padding-bottom: 10px;
+    font-size: 30px;
+  }
+  .text-per li {
+    text-align: justify;
+    padding: 10px 0px;
+  }
+
+
+  .texto-per h4 {
+    font-size: 30px;
+  }
+
+  .text-per p {
+    text-align: justify;
+    padding: 10px 0px;
+  }
+
+  .overlay-per::-webkit-scrollbar{
+    width: 10px;
+    background:var(--primario);
+    
+  }
+  
+  .overlay-per::-webkit-scrollbar-thumb{
+    background: var(--terciario); 
+  }
+
+ .abrir-per button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: var(--segundario);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  cursor: pointer;
+  border-radius: 50%;
+  color:black;
+  border: none;
+  outline: none;
+  font-family: var(--texto2);
+  transition: all 300ms;
+  transition: 0.5s;
+  }
+
+  .abrir-per button:hover{
+
+    color: var(--terciario);
+    background-color: var(--primario);
+    border: 2px solid var(--terciario);
+  
+  }
+
+  .abrir-per button:active{
+    transition: all 100ms;
+    transform: scale(0.9);
+    color:black;
+    outline: none;
+  }
+
+  .cerrar-per button {
+    position: absolute;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background: var(--segundario);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    border-radius: 50%;
+    color:black;
+    border: none;
+    outline: none;
+    font-family: 'Viga', sans-serif;
+    transition: all 300ms;
+    transition: 0.5s;
+  }
+
+
+
+     
+  .container-geofisica{
+    background: var(--segundario);
+    width: 100%;
+    padding: 40px 180px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    text-align: center;
+    font-family: var(--texto2);
+    color: var(--terciario);
+  }
+
+  .geofisica {
+    background-image: url(../img/geofi.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 300px;
+   
+  }
+
+  .geofisica h4{
+    font-size: 26px;
+  }
+
+  .geofisica p {
+    padding: 50px 0px;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  
+  .overlay-geo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--primario);
+    overflow: hidden;
+    width: 0;
+    height: 300px;
+    transition: .5s ease;
+    overflow-y: scroll;
+  }
+
+
+  
+
+  .text-geo-over {
+    padding: 30px 40px;
+    text-align: justify;
+   }
+  
+   .text-geo-over h4{
+     text-align: center;
+     margin-bottom: 20px;
+    font-size: 30px;
+   }
+
+   .text-geo-over li {
+    margin-bottom: 20px;
+   }
+  
+  
+
+
+  .container  .text-geo {
+    display: block;
+  }
+
+  
+  
+  .text-geo {
+    color: var(--terciario);
+    font-size: 15px;
+    position: absolute;
+    text-align: center;
+    display: none;
+    padding: 50px 50px;
+    height: 300px;
+    background-color: var(--primario);
+  }
+
+  .text-geo h4{
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  .text-geo li {
+    text-align: justify;
+    padding: 10px 0px;
+  }
+
+
+  .text-geo h4 {
+    font-size: 30px;
+  }
+
+  .text-geo p {
+    text-align: justify;
+
+  }
+
+  .overlay-geo::-webkit-scrollbar{
+    width: 10px;
+    background:var(--primar);
+    
+  }
+  
+  .overlay-geo::-webkit-scrollbar-thumb{
+    background: var(--terciario); 
+  }
+
+ .abrir-geo button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: var(--segundario);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  cursor: pointer;
+  border-radius: 50%;
+  color:black;
+  border: none;
+  outline: none;
+  font-family: var(--texto2);
+  transition: all 300ms;
+  transition: 0.5s;
+  }
+
+  .abrir-geo button:hover{
+
+    color: var(--terciario);
+    background-color: var(--primario);
+    border: 2px solid var(--terciario);
+  
+  }
+
+  .abrir-geo button:active{
+    transition: all 100ms;
+    transform: scale(0.9);
+    color:black;
+    outline: none;
+  }
+
+  .cerrar-geo button {
+    position: absolute;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background: var(--segundario);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    border-radius: 50%;
+    color:black;
+    border: none;
+    outline: none;
+    font-family: 'Viga', sans-serif;
+    transition: all 300ms;
+    transition: 0.5s;
+  }
+
+
+  
+  .container-control{
+    background: var(--segundario);
+    width: 100%;
+    padding: 40px 180px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    text-align: center;
+    font-family: var(--texto2);
+    color: var(--terciario);
+  }
+
+  .control-obras {
+    background-image: url(../img/con-1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 300px;
+   
+  }
+
+
+  
+  .overlay-con {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--primario);
+    overflow: hidden;
+    width: 0;
+    height: 300px;
+    transition: .5s ease;
+    overflow-y: scroll;
+  }
+
+  
+  .text-con-over {
+    padding: 30px 40px;
+    text-align: justify;
+   }
+  
+   .text-con-over h4{
+     text-align: center;
+     margin-bottom: 20px;
+    font-size: 30px;
+   }
+
+   .text-con-over li {
+    margin-bottom: 20px;
+   }
+  
+
+
+  .container  .text-con {
+    display: block;
+  }
+
+  .overlay-con h4{
+    font-size: 30px;
+  }
+
+  .overlay-con li {
+     text-align: justify;
+  } 
+  
+  .text-con {
+    color: var(--terciario);
+    font-size: 15px;
+    position: absolute;
+    background-color: var(--primario);
+    text-align: center;
+    display: none;
+    padding: 50px 50px;
+    height: 300px;
+  }
+
+  .text-con h4{
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  
+  .text-con li {
+    text-align: justify;
+    padding: 10px 0px;
+  }
+
+  .text-con p {
+    text-align: justify;
+  }
+
+
+  .overlay-con::-webkit-scrollbar{
+    width: 10px;
+    background:var(--primario);
+    
+  }
+  
+  .overlay-con::-webkit-scrollbar-thumb{
+    background: var(--terciario); 
+  }
+
+ .abrir-con button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: var(--segundario);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  cursor: pointer;
+  border-radius: 50%;
+  color:black;
+  border: none;
+  outline: none;
+  font-family: var(--texto2);
+  transition: all 300ms;
+  transition: 0.5s;
+  }
+
+  .abrir-con button:hover{
+
+    color: var(--terciario);
+    background-color: var(--primario);
+    border: 2px solid var(--terciario);
+  
+  }
+
+  .abrir-con button:active{
+    transition: all 100ms;
+    transform: scale(0.9);
+    color:black;
+    outline: none;
+  }
+
+  .cerrar-con button {
+    position: absolute;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background: var(--segundario);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    border-radius: 50%;
+    color:black;
+    border: none;
+    outline: none;
+    font-family: 'Viga', sans-serif;
+    transition: all 300ms;
+    transition: 0.5s;
+  }
+
+

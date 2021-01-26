@@ -1,0 +1,497 @@
+@media screen and (max-width: 1024px) {
+  .introduccion {
+    padding: 6px 150px;
+  }
+
+  .container-servicios {
+    width: 100%;
+    height: 210px;
+  }
+
+  .container-servicios h4 {
+    padding-top: 25px;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  /* Seccion de laboratorio */
+
+  .container-laboratorio {
+    padding: 40px 120px;
+    display: grid;
+    grid-template-columns: 36% 64%;
+  }
+
+  .text-lab {
+    font-size: 15px;
+    padding: 30px 30px;
+  }
+
+  .text-lab h4 {
+    font-size: 25px;
+    padding-bottom: 5px;
+  }
+
+  .abrir button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .overlay h4 {
+    font-size: 25px;
+  }
+
+  .overlay li {
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  /* Seccion de perforaciones */
+
+  .container-perforaciones {
+    padding: 40px 120px;
+    display: grid;
+    grid-template-columns: 36% 64%;
+  }
+
+  .text-per {
+    font-size: 15px;
+    padding: 50px 30px;
+  }
+
+  .text-per h4 {
+    font-size: 25px;
+    padding-bottom: 5px;
+  }
+
+  .abrir-per button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .overlay-per h4 {
+    font-size: 25px;
+  }
+
+  .overlay-per li {
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  /* Seccion geofisica */
+
+  .container-geofisica {
+    padding: 40px 120px;
+    display: grid;
+    grid-template-columns: 36% 64%;
+  }
+
+  .text-geo {
+    font-size: 15px;
+    padding: 40px 30px;
+  }
+
+  .text-geo h4 {
+    font-size: 25px;
+    padding-bottom: 5px;
+  }
+
+  .abrir-geo button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .overlay-geo h4 {
+    font-size: 25px;
+  }
+
+  .overlay-geo li {
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  /* SERVICIO DE CONTROL DE OBRA */
+
+  .container-control {
+    padding: 40px 120px;
+    display: grid;
+    grid-template-columns: 36% 64%;
+  }
+
+  .text-con {
+    font-size: 15px;
+    padding: 40px 30px;
+  }
+
+  .text-con h4 {
+    font-size: 25px;
+    padding-bottom: 5px;
+  }
+
+  .abrir-con button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .overlay-con h4 {
+    font-size: 25px;
+  }
+
+  .overlay-con li {
+    text-align: justify;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-servicios {
+    width: 100%;
+    height: 250px;
+  }
+
+  .container-servicios h4 {
+    padding-top: 50px;
+    font-size: 50px;
+  }
+
+  .container-servicios2 {
+    height: 300px;
+  }
+
+  .introduccion {
+    padding: 20px 50px;
+    height: 270px;
+  }
+
+  /* Seccion de laboratorio */
+
+  .container-laboratorio {
+    padding: 40px 100px;
+    grid-template-columns: 0% 100%;
+  }
+
+  /* Seccion de perforaciones */
+
+  .container-perforaciones {
+    padding: 40px 100px;
+    grid-template-columns: 0% 100%;
+  }
+
+  .text-per {
+    padding: 80px 30px;
+  }
+
+  /* Seccion geofisica */
+
+  .container-geofisica {
+    padding: 40px 100px;
+    grid-template-columns: 0% 100%;
+  }
+
+  /* SERVICIO DE CONTROL DE OBRA */
+
+  .container-control {
+    padding: 40px 100px;
+    grid-template-columns: 0% 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .introduccion {
+    padding: 5px 30px;
+  }
+
+  .introduccion p {
+    padding: 10px 0px;
+    font-size: 15px;
+  }
+
+  .container-servicios {
+    width: 100%;
+    height: 230px;
+  }
+
+  .container-servicios h4 {
+    padding-top: 1px;
+  }
+
+  .N-servicios {
+    padding: 30px 10px;
+  }
+
+  /* Seccion de laboratorio */
+
+  .container-laboratorio {
+    padding: 20px 20px;
+    grid-template-columns: 0% 100%;
+  }
+
+  .text-lab {
+    font-size: 13.6px;
+    padding: 10px 30px;
+  }
+
+  .text-lab h4 {
+    font-size: 25px;
+    padding-bottom: 5px;
+  }
+
+  /* Seccion de perforaciones */
+
+  .container-perforaciones {
+    padding: 20px 20px;
+    grid-template-columns: 0% 100%;
+  }
+
+  .text-per {
+    font-size: 13.6px;
+    padding: 50px 30px;
+  }
+
+  .text-per h4 {
+    font-size: 25px;
+    padding-bottom: 5px;
+  }
+
+  /* Seccion geofisica */
+
+  .container-geofisica {
+    padding: 20px 20px;
+    grid-template-columns: 0% 100%;
+  }
+
+  .text-geo {
+    font-size: 13.6px;
+    padding: 10px 30px;
+  }
+
+  .text-geo h4 {
+    font-size: 25px;
+    padding-bottom: 5px;
+  }
+
+   /* SERVICIO DE CONTROL DE OBRA */
+
+   .container-control {
+    padding: 20px 20px;
+    grid-template-columns: 0% 100%;
+  }
+
+  .text-con {
+    font-size: 13.6px;
+    padding: 10px 30px;
+  }
+
+  .text-con h4 {
+    font-size: 25px;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+
+    .text-lab {
+        font-size: 15px;
+        padding: 20px 0px;
+      }
+
+      .text-lab p{
+        font-size: 12px;
+        padding: 10px 20px;
+      }
+    
+      .text-lab h4 {
+        font-size: 25px;
+      }
+
+      .text-lab-over h4 {
+        font-size: 25px;
+      }
+    
+      .text-lab-over li {
+        font-size: 12px;
+      }
+
+
+      .text-per {
+        font-size: 15px;
+        padding: 60px 0px;
+      }
+
+      .text-per p{
+        font-size: 12px;
+        padding: 10px 20px;
+      }
+    
+      .text-per h4 {
+        font-size: 25px;
+      }
+
+      .text-per-over h4 {
+        font-size: 25px;
+      }
+    
+      .text-per-over li {
+        font-size: 12px;
+      }
+
+
+
+      .text-geo {
+        font-size: 15px;
+        padding: 20px 0px;
+      }
+
+      .text-geo p{
+        font-size: 12px;
+        padding: 10px 20px;
+      }
+    
+      .text-geo h4 {
+        font-size: 25px;
+      }
+
+      .text-geo-over h4 {
+        font-size: 25px;
+      }
+    
+      .text-geo-over li {
+        font-size: 12px;
+      }
+
+
+      .text-con {
+        font-size: 15px;
+        padding: 20px 0px;
+      }
+
+      .text-con p{
+        font-size: 12px;
+        padding: 10px 20px;
+      }
+    
+      .text-con h4 {
+        font-size: 25px;
+      }
+
+      .text-con-over h4 {
+        font-size: 25px;
+      }
+    
+      .text-con-over li {
+        font-size: 12px;
+      }
+
+
+}
+
+
+@media screen and (max-width: 320px){
+
+
+    
+      .introduccion p {
+        padding: 10px 0px;
+        font-size: 12px;
+      }
+    
+  
+    
+      /* Seccion de laboratorio */
+    
+    
+      .text-lab {
+        font-size: 12px;
+        padding: 0px 1px;
+      }
+
+      .text-lab p{
+        font-size: 12px;
+        padding: 10px 30px;
+      }
+    
+      .text-lab h4 {
+        font-size: 25px;
+        padding-bottom: 1px;
+      }
+
+      .text-lab-over h4 {
+        font-size: 25px;
+      }
+    
+      .text-lab-over li {
+        font-size: 12px;
+      }
+    
+      /* Seccion de perforaciones */
+    
+    
+      .text-per {
+        font-size: 12px;
+        padding: 50px 10px;
+      }
+    
+      .text-per h4 {
+        font-size: 25px;
+        padding-bottom: 5px;
+      }
+
+      .text-per-over h4 {
+        font-size: 25px;
+      }
+    
+      .text-per-over li {
+        font-size: 12px;
+      }
+    
+      /* Seccion geofisica */
+    
+     
+      .text-geo {
+        font-size: 12px;
+        padding: 10px 5px;
+      }
+    
+      .text-geo h4 {
+        font-size: 25px;
+        margin-bottom: -10px;
+      }
+
+      .text-geo-over h4 {
+        font-size: 25px;
+      }
+    
+      .text-geo-over li {
+        text-align: justify;
+        font-size: 12px;
+      }
+    
+       /* SERVICIO DE CONTROL DE OBRA */
+    
+
+
+      .text-con {
+        font-size: 12px;
+        padding: 20px 5px;
+      }
+    
+      .text-con h4 {
+        font-size: 20px;
+        margin-bottom: -10px;
+      }
+
+      .text-con-over h4 {
+        font-size: 20px;
+      }
+    
+      .text-con-over li {
+        text-align: justify;
+        font-size: 12px;
+      }
+
+      
+
+
+
+}

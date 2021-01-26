@@ -1,0 +1,135 @@
+
+:root {
+  --primario:#1E1F26;
+  --segundario: #FFDD40;
+  --terciario: #f2f2f2;
+  --cuarto:#1a1a1a;
+  --texto1:'Bangers', cursive;
+  --texto2:'Mitr', sans-serif;
+}
+
+.container-footer {
+  width: 100%;
+  background-image: url(../img/perfor.png);
+  font-family: var(--texto2);
+  color: var(--terciario);
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 2, 150px;
+  justify-items: center;
+}
+
+.logotipo{
+  background-color: var(--primarioT);
+  padding: 60px 160px;
+  justify-self: stretch;
+}
+
+.logotipo img{
+   width:250px;
+}
+
+.logos{
+  background-color: var(--primarioT);
+  padding: 60px 160px;
+  justify-self: stretch;
+}
+
+.logos img {
+  width: 40px;
+}
+
+.logos p {
+  margin-bottom: 20px
+}
+
+.logos a {
+  padding: 20px 10px;
+} 
+
+.logos a:hover{
+  transition: all 100ms;
+  transform: scale(0.5);
+}
+
+
+.final{
+ background-color: var(--cuarto); 
+ text-align: center;
+ font-family: var(--texto2);
+ color: var(--terciario);
+ padding: 10px;
+}
+
+.lema {
+  background-color: var(--segundario);
+  height: 20px;
+}
+
+.espacio {
+  background-color: var(--segundario);
+  height: 100px;
+}
+
+@media screen and (max-width: 1024px ){
+
+  .logos{
+    padding: 60px 10px;
+  }
+
+}
+
+@media screen and (max-width: 768px ) {
+
+  .container-footer {
+    
+    grid-template-columns: 0% 100%;
+   
+  }
+
+  .logos {
+    justify-self: center;
+    background: none;
+  }
+
+  .logotipo {
+
+    background: none;
+   }
+
+.logotipo img{
+
+ display: none;
+}
+
+}
+@media screen and (max-width: 425px ){
+
+.logos{
+    padding: 40px 30px;
+  
+}
+
+.logotipo{
+
+  padding: 40px 30px;
+ 
+}
+  
+  .final p {
+    font-size: 10px;
+  }
+
+}
+
+@media screen and (max-width: 320px ){
+
+  
+
+
+
+  .final p {
+    font-size: 10px;
+  }
+
+}

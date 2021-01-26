@@ -1,0 +1,338 @@
+:root {
+  --primario: #1e1f26;
+  --primarioT: #1e1f26c2;
+  --segundarioT: #ffdc409d;
+  --segundario: #ffdd40;
+  --terciario: #f2f2f2;
+  --rojo: #ed3237;
+  --texto1: "Bangers", cursive;
+  --texto2: "Mitr", sans-serif;
+}
+
+.container-nosotros {
+  width: 100%;
+  font-family: var(--texto2);
+  color: var(--terciario);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  justify-content: center;
+}
+
+.nosotros {
+  height: 600px;
+  background-color: var(--primario);
+  padding: 200px 50px;
+  text-align: center;
+}
+
+.nosotros h4 {
+  font-size: 50px;
+}
+
+.text-nosotrosb {
+  text-align: center;
+}
+
+.text-nosotrosb button {
+  width: 160px;
+  height: 40px;
+  padding: 5px 10px;
+  background: var(--segundario);
+  box-shadow: 0 2px 5px var(--primario);
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 1em;
+  color: var(--primario);
+  border: none;
+  outline: none;
+  font-family: var(--texto2);
+  transition: all 300ms;
+  transition: 0.5s;
+}
+
+.text-nosotrosb button:hover {
+  color: var(--terciario);
+  background-color: var(--primario);
+  border: 2px solid var(--terciario);
+}
+
+.text-nosotrosb button:active {
+  transition: all 100ms;
+  transform: scale(0.9);
+  outline: none;
+}
+
+.text-nosotros {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 600px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--primarioT);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  bottom: 0;
+  overflow-y: scroll;
+}
+
+.overlay::-webkit-scrollbar {
+  width: 10px;
+  background: var(--primario);
+}
+
+.overlay::-webkit-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--segundario);
+}
+
+.text-nosotrosbc {
+  margin-top: 30px;
+  right: 20px;
+  border-radius: 50%;
+}
+
+.text-nosotrosbc button {
+  width: 30px;
+  height: 30px;
+  background: var(--segundario);
+  cursor: pointer;
+  border-radius: 50%;
+  color: var(--primario);
+  border: none;
+  outline: none;
+  font-family: "Viga", sans-serif;
+  transition: all 300ms;
+  transition: 0.5s;
+}
+
+.text-nosotrosbc button:hover {
+  color: var(--terciario);
+  background-color: var(--primario);
+  border: 2px solid var(--terciario);
+}
+
+.text-nosotrosbc button:active {
+  transition: all 100ms;
+  transform: scale(0.9);
+  color: black;
+  outline: none;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.text p {
+  padding: 50px 50px;
+  text-align: justify;
+}
+
+.text-nosotrosr {
+  display: none;
+}
+
+.container-mision {
+  width: 100%;
+  height: 500px;
+  background-color: var(--segundario);
+  font-family: var(--texto2);
+  color: var(--terciario);
+  display: grid;
+  padding: 110px 30px;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+}
+
+.text-mision {
+  height: 300px;
+  background-color: var(--segundario);
+  padding: 50px 50px;
+  color: var(--primario);
+  text-align: justify;
+  border: 2px solid var(--primario);
+  /* box-shadow:  0 0 3px var(--primario);  */
+}
+
+.text-vision {
+  height: 300px;
+  text-align: justify;
+  background-color: var(--primario);
+  padding: 50px 50px;
+  color: var(--terciario);
+}
+
+.container-equipo {
+  background-color: var(--primario);
+  font-family: var(--texto2);
+  color: var(--terciario);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, auto);
+  padding: 50px 100px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.card-equipo {
+   background-color: var(--primario);
+   justify-self: stretch;
+   align-self: stretch;
+}
+
+.card-equipo2 {
+  background-color: var(--primario);
+  justify-self: stretch;
+  align-self: stretch;
+}
+
+.card-equipo3 {
+  background-color: var(--segundario);
+  justify-self: stretch;
+  align-self: stretch;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-front img {
+ width: 100%;
+ height: 260px;
+}
+
+.container-text-equipo {
+  background-color: var(--primario);
+  font-family: var(--texto2);
+  color: var(--terciario);
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: repeat(1, auto);
+}
+
+.text-equipo {
+  width: 100%;
+  background-color: var(--primario);
+  border: 1px solid var(--segundario);
+  height: 43px;
+  padding: 10px 0px;
+  margin-top: -10px;
+  
+}
+
+.button-a {
+  padding: 10px 0px;
+  margin-top: -20px;
+}
+
+.button-a button{
+  background-color: var(--segundario);
+  border: none;
+  width: 100%;
+  outline: none;
+  height: 43px;
+  font-family: var(--texto2);
+}
+
+/* .button-a button:hover{
+
+  color: var(--terciario);
+  background-color: var(--primario);
+  border: 2px solid var(--terciario);
+
+} */
+
+.flip-card-back {
+  background-color: var(--primario);
+  border: 1px solid var(--terciario);
+  color: white;
+  padding: 15px 0px;
+  transform: rotateY(180deg);
+  justify-content: center;
+}
+
+.flip-card-back h2 {
+  font-size: 30px;
+}
+
+.text-card1 {
+  padding: 10px 40px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.text-card2 {
+  padding: 1px 40px;
+  text-align: justify;
+}
+
+.button-c button{
+    position: absolute;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background: var(--segundario);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    border-radius: 50%;
+    color:black;
+    border: none;
+    outline: none;
+    font-family: var(--texto2);
+    transition: all 300ms;
+    transition: 0.5s;
+}
+
+
+.button-c button:hover{
+
+  color: var(--terciario);
+  background-color: var(--primario);
+  border: 2px solid var(--terciario);
+
+}
+
+
+
