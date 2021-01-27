@@ -271,6 +271,7 @@
   background-color: var(--segundario);
   border: none;
   width: 100%;
+  cursor: pointer;
   outline: none;
   height: 43px;
   font-family: var(--texto2);
@@ -307,6 +308,8 @@
   padding: 1px 40px;
   text-align: justify;
 }
+
+
 
 .button-c button{
     position: absolute;

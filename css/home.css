@@ -1,0 +1,55 @@
+:root {
+    --primario: #1e1f26;
+    --primarioT: #1e1f26c2;
+    --segundarioT: #ffdc409d;
+    --segundario: #ffdd40;
+    --terciario: #f2f2f2;
+    --rojo: #ed3237;
+    --texto1: "Bangers", cursive;
+    --texto2: "Mitr", sans-serif;
+  }
+
+  header {
+      width: 100%;
+      height: auto;
+      position: relative;
+      overflow: hidden;
+  }
+
+  video {
+      width: 100%;
+  }
+
+  .absolute {
+      width: 100%;
+      top:0;
+      right: 0;
+      position: absolute;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+ h1 {
+      font-size: 80px;
+      font-weight: 900px;
+      z-index: 100px;
+      color: var(--terciario);
+      margin-bottom: 30px;
+  }
+
+   h1::after {
+      display: block;
+      width: 30%;
+      height: auto;
+      margin: auto;
+      background: var(--primario);
+  }
+
+  .overlay-v {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: var(--primarioT);
+  }

@@ -1,11 +1,14 @@
 
 :root {
-  --primario:#1E1F26;
-  --segundario: #FFDD40;
+  --primario: #1e1f26;
+  --primarioT: #1e1f26c2;
+  --segundarioT: #ffdc409d;
+  --segundario: #ffdd40;
   --terciario: #f2f2f2;
-  --cuarto:#1a1a1a;
-  --texto1:'Bangers', cursive;
-  --texto2:'Mitr', sans-serif;
+  --rojo: #ed3237;
+  --cuarto: #000000;
+  --texto1: "Bangers", cursive;
+  --texto2: "Mitr", sans-serif;
 }
 
 .container-footer {
@@ -54,7 +57,7 @@
 
 
 .final{
- background-color: var(--cuarto); 
+ background-color: var(--cuarto) ; 
  text-align: center;
  font-family: var(--texto2);
  color: var(--terciario);
