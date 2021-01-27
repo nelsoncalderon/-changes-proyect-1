@@ -1,0 +1,29 @@
+.hero{
+  background-image: url('https://images.pexels.com/photos/1145434/pexels-photo-1145434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.hero__container{
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__title{
+  color: #ffffff;
+  font-size: 3.4rem;
+  font-weight: 700;
+}
+
+/* ------- Projects --------- */
+
+.projects{
+  background-color: rgb(190, 190, 190);
+}
+
