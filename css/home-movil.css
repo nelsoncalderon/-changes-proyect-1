@@ -1,0 +1,172 @@
+@media screen and (max-width: 1024px) {
+  .container-card-ini {
+    padding: 30px 50px;
+    gap: 3em;
+  }
+
+  .container-text-v {
+    padding: 40px 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text-ini h1 {
+    font-size: 50px;
+  }
+
+  .container-card-ini {
+    grid-template-columns: 1fr;
+    padding: 50px 250px;
+  }
+
+  .card {
+    background-color: transparent;
+    position: relative;
+    padding: 20px 0px;
+  }
+
+  .container-v {
+    grid-template-columns: 1fr;
+    padding: 50px 70px;
+  }
+
+  .container-text-v {
+    padding: 30px 60px;
+  }
+
+  .container-text-v p {
+    font-size: 14px;
+  }
+
+  .container-vp {
+    padding: 20px 20px;
+  }
+
+  .text h3 {
+    font-size: 20px;
+  }
+
+  .text p {
+    font-size: 15px;
+  }
+
+  .text {
+    font-size: 13px;
+    padding: 8px 20px;
+  }
+
+  .container-contactos {
+    grid-template-columns: 1fr;
+  }
+  .text-ubicacion {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .text-ini h1 {
+    font-size: 30px;
+  }
+
+  .container-card-ini {
+    grid-template-columns: 1fr;
+    padding: 50px 50px;
+  }
+
+  .container-v {
+    grid-template-columns: 1fr;
+    padding: 50px 40px;
+  }
+
+  .container-text-v {
+    padding: 40px 20px;
+  }
+
+  .container-text-v p {
+    font-size: 14px;
+  }
+
+  .container-vp {
+    padding: 20px 20px;
+  }
+
+  .text-s {
+    padding: 10px 10px;
+  }
+
+  .text h3 {
+    font-size: 20px;
+  }
+
+  .text p {
+    font-size: 13px;
+  }
+
+  .text-contacto {
+    padding: 20px 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container-card-ini {
+    grid-template-columns: 1fr;
+    padding: 50px 50px;
+  }
+
+  .container-text-v {
+    padding: 50px 20px;
+  }
+
+  .container-text-v h2 {
+    font-size: 20px;
+  }
+
+  .container-text-v p {
+    font-size: 12px;
+  }
+
+  .container-s {
+    padding: 50px 20px;
+  }
+
+  .text-s {
+    padding: 40px 1px;
+  }
+
+  .text-contacto {
+    padding: 20px 5px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .container-card-ini {
+    grid-template-columns: 1fr;
+    padding: 50px 40px;
+  }
+
+  .card p {
+    font-size: 13px;
+    text-align: justify;
+  }
+
+  .text-s {
+    padding: 30px 1px;
+  }
+
+  .text h3 {
+    font-size: 15px;
+  }
+
+  .text p {
+    font-size: 12px;
+  }
+
+  .button-s button {
+    width: 100px;
+    font-size: 1em;
+  }
+
+  .text-contacto p {
+    font-size: 14px;
+  }
+}

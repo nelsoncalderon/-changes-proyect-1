@@ -5,51 +5,295 @@
     --segundario: #ffdd40;
     --terciario: #f2f2f2;
     --rojo: #ed3237;
-    --texto1: "Bangers", cursive;
     --texto2: "Mitr", sans-serif;
+    --texto3: 'Didact Gothic', sans-serif;
   }
 
-  header {
-      width: 100%;
-      height: auto;
-      position: relative;
-      overflow: hidden;
-  }
+  /* header {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    background-image: url(../img/2.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: rgb(255, 250, 250);
+    text-align: center;
+    
 
-  video {
-      width: 100%;
-  }
+   
+  } */
 
-  .absolute {
-      width: 100%;
-      top:0;
-      right: 0;
-      position: absolute;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
+ /* video {
+     position: fixed;
+     min-width: 100%;
+     min-height: 100%;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-50%)  translateY(-50%);
+     z-index: -1;
+     -webkit-filter: grayscale(100%);
+ } */
 
- h1 {
-      font-size: 80px;
-      font-weight: 900px;
-      z-index: 100px;
+ .video-per {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: var(--primario);
+ }
+
+ .video-per video {
+     width: 100%;
+     height: auto;
+     /* -webkit-filter: grayscale(100%); */
+ }
+ 
+ .texto-inicio {
+     width: 100%;
+     height: 100%;
+     background-color: var(--primarioT);
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     font-family: var(--texto2);
+     color: var(--terciario);
+ }
+
+ .text-ini {
+    position: absolute;
+    top: 30%;
+ }
+
+ .text-ini h1 {
+     font-size: 70px;
+    
+ 
+     
+ }
+
+ /* card */
+
+ .container-card-ini {
+
+    background-color: var(--segundario);
+    font-family: var(--texto2);
+    color: var(--terciario);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto);
+    padding: 50px 100px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 7em;
+
+ }
+
+ .card-ini {
+    background-color: var(--primario);
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+    border-radius: 20px;
+ }
+
+ .card {
+    background-color: transparent;
+    position: relative;
+    height: 280px;
+    margin: 2rem auto;
+    text-align: center;
+
+ }
+
+ .card img {
+     width: 50px;
+     margin-top: 20px;
+ }
+
+ .card p{
+     text-align: center;
+     margin: 0;
+     padding: 20px 20px;
+     position: absolute;
+     font-family: var(--texto3);
+ }
+
+
+  .button-ini button {
+    position: absolute;
+    top: 85%;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: var(--segundario);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    border-radius: 50%;
+    color:black;
+    border: none;
+    outline: none;
+    font-family: var(--texto2);
+    transition: all 300ms;
+    transition: 0.5s;
+    }
+  
+    .button-ini button:hover{
+  
       color: var(--terciario);
-      margin-bottom: 30px;
-  }
+      background-color: var(--primario);
+      border: 2px solid var(--terciario);
+    
+    }
+  
+    .button-ini button:active{
+      transition: all 100ms;
+      transform: scale(0.9);
+      color:black;
+      outline: none;
+    }
 
-   h1::after {
-      display: block;
-      width: 30%;
-      height: auto;
-      margin: auto;
-      background: var(--primario);
-  }
 
-  .overlay-v {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      background: var(--primarioT);
-  }
+    .container-v {
+        background-color: var(--primario);
+        font-family: var(--texto2);
+        color: var(--terciario);
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, auto);
+        padding: 70px 50px;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+  
+   }
+
+   .container-text-v {
+    
+    background: var(--primario);
+    align-self: stretch;
+    padding: 70px 40px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid var(--terciario);
+    color: var(--terciario);
+    
+   }
+
+   .container-text-v p {
+    font-family: var(--texto3);
+    font-size: 17px;
+    padding: 20px 0px;
+    text-align: justify;
+    
+   }
+
+   .container-vp {
+   
+       align-self: stretch;
+       padding: 20px 20px;
+   }
+
+
+   .container-vp video{
+       width: 100%;
+       height: auto;
+       outline: none;
+   }
+
+   .container-s {
+    background-color: var(--segundario);
+    font-family: var(--texto2);
+    color: var(--terciario);
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px;
+    padding: 70px 50px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+   }
+
+   .container-slider {
+    background: var(--primario);
+    color: var(--primario);
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+   
+   }
+
+   .text-s {
+    padding: 70px 70px;
+   }
+
+   .text-s h3 {
+       font-size: 30px;
+   }
+
+   .text-s p {
+     padding: 20px;
+     text-align: justify;
+     font-size: 17px;
+     font-family: var(--texto3);
+}
+
+
+/* contacto */
+
+
+.container-contactos {
+    background: var(--primario);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 300px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 40px;
+    font-family: var(--texto2);
+}
+
+.text-contacto {
+    /* background: var(--segundario); */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: var(--texto2);
+    margin: auto;
+    padding: 50px 40px;
+    color: var(--terciario);
+}
+
+.text-contacto h3 {
+    font-size: 30px;
+    padding: 20px ;
+}
+
+.text-contacto p {
+    font-size: 17px;
+    font-family: var(--texto3);
+    text-align: center;
+  
+}
+
+
+
+.text-ubicacion {
+ 
+    justify-self: stretch;
+    width: 100%;
+    height: 100%;
+}
+
+.text-ubicacion iframe {
+    width: 100%;
+    height: 100%;
+}

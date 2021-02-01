@@ -5,8 +5,8 @@
   --segundario: #ffdd40;
   --terciario: #f2f2f2;
   --rojo: #ed3237;
-  --texto1: "Bangers", cursive;
   --texto2: "Mitr", sans-serif;
+  --texto3: 'Didact Gothic', sans-serif;
 }
 
 .container-nosotros {
@@ -31,6 +31,7 @@
 
 .text-nosotrosb {
   text-align: center;
+  
 }
 
 .text-nosotrosb button {
@@ -45,7 +46,7 @@
   color: var(--primario);
   border: none;
   outline: none;
-  font-family: var(--texto2);
+  font-family: var(--texto3);
   transition: all 300ms;
   transition: 0.5s;
 }
@@ -86,6 +87,7 @@
   transition: 0.5s ease;
   bottom: 0;
   overflow-y: scroll;
+  font-family: var(--texto3);
 }
 
 .overlay::-webkit-scrollbar {
@@ -101,7 +103,9 @@
   margin-top: 30px;
   right: 20px;
   border-radius: 50%;
+ 
 }
+
 
 .text-nosotrosbc button {
   width: 30px;
@@ -160,21 +164,44 @@
 
 .text-mision {
   height: 300px;
-  background-color: var(--segundario);
+  background-color: var();
   padding: 50px 50px;
   color: var(--primario);
+
+  border-radius: 20px 0px 0px 20px;
+  
   text-align: justify;
   border: 2px solid var(--primario);
-  /* box-shadow:  0 0 3px var(--primario);  */
+ 
+}
+
+.text-mision h2 {
+  font-size: 30px;
+}
+
+.text-mision p{
+   font-family: var(--texto3);
+   padding: 20px 0px;
+   font-size: 16px;
 }
 
 .text-vision {
   height: 300px;
   text-align: justify;
+  border-radius: 0px 20px 20px 0px;
   background-color: var(--primario);
   padding: 50px 50px;
+  
+  /* letter-spacing: 0.5px; */
   color: var(--terciario);
 }
+
+.text-vision p{
+  font-family: var(--texto3);
+  padding: 20px 0px;
+  font-size: 16px;
+}
+
 
 .container-equipo {
   background-color: var(--primario);
@@ -196,16 +223,33 @@
    align-self: stretch;
 }
 
+.card-equipo p {
+  font-family: var(--texto3);
+  font-size: 15px;
+}
+
+
+
+
 .card-equipo2 {
   background-color: var(--primario);
   justify-self: stretch;
   align-self: stretch;
 }
 
+.card-equipo2 p {
+  font-family: var(--texto3);
+  font-size: 15px;
+}
+
 .card-equipo3 {
-  background-color: var(--segundario);
   justify-self: stretch;
   align-self: stretch;
+}
+
+.card-equipo3 p {
+  font-family: var(--texto3);
+  font-size: 15px;
 }
 
 .flip-card {

@@ -20,11 +20,13 @@
     padding: 40px 120px;
     display: grid;
     grid-template-columns: 36% 64%;
+   
   }
 
   .text-lab {
     font-size: 15px;
     padding: 30px 30px;
+    border-radius: 20px;
   }
 
   .text-lab h4 {
@@ -57,6 +59,7 @@
   .text-per {
     font-size: 15px;
     padding: 50px 30px;
+    border-radius: 20px;
   }
 
   .text-per h4 {
@@ -89,6 +92,7 @@
   .text-geo {
     font-size: 15px;
     padding: 40px 30px;
+    border-radius: 20px;
   }
 
   .text-geo h4 {
@@ -121,6 +125,7 @@
   .text-con {
     font-size: 15px;
     padding: 40px 30px;
+    border-radius: 20px;
   }
 
   .text-con h4 {
@@ -270,9 +275,9 @@
     padding-bottom: 5px;
   }
 
-   /* SERVICIO DE CONTROL DE OBRA */
+  /* SERVICIO DE CONTROL DE OBRA */
 
-   .container-control {
+  .container-control {
     padding: 20px 20px;
     grid-template-columns: 0% 100%;
   }
@@ -289,209 +294,185 @@
 }
 
 @media screen and (max-width: 375px) {
+  .text-lab {
+    font-size: 15px;
+    padding: 20px 0px;
+  }
 
+  .text-lab p {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
 
-    .text-lab {
-        font-size: 15px;
-        padding: 20px 0px;
-      }
+  .text-lab h4 {
+    font-size: 25px;
+  }
 
-      .text-lab p{
-        font-size: 12px;
-        padding: 10px 20px;
-      }
-    
-      .text-lab h4 {
-        font-size: 25px;
-      }
+  .text-lab-over h4 {
+    font-size: 25px;
+  }
 
-      .text-lab-over h4 {
-        font-size: 25px;
-      }
-    
-      .text-lab-over li {
-        font-size: 12px;
-      }
+  .text-lab-over li {
+    font-size: 12px;
+  }
 
+  .text-per {
+    font-size: 15px;
+    padding: 60px 0px;
+  }
 
-      .text-per {
-        font-size: 15px;
-        padding: 60px 0px;
-      }
+  .text-per p {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
 
-      .text-per p{
-        font-size: 12px;
-        padding: 10px 20px;
-      }
-    
-      .text-per h4 {
-        font-size: 25px;
-      }
+  .text-per h4 {
+    font-size: 25px;
+  }
 
-      .text-per-over h4 {
-        font-size: 25px;
-      }
-    
-      .text-per-over li {
-        font-size: 12px;
-      }
+  .text-per-over h4 {
+    font-size: 25px;
+  }
 
+  .text-per-over li {
+    font-size: 12px;
+  }
 
+  .text-geo {
+    font-size: 15px;
+    padding: 20px 0px;
+  }
 
-      .text-geo {
-        font-size: 15px;
-        padding: 20px 0px;
-      }
+  .text-geo p {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
 
-      .text-geo p{
-        font-size: 12px;
-        padding: 10px 20px;
-      }
-    
-      .text-geo h4 {
-        font-size: 25px;
-      }
+  .text-geo h4 {
+    font-size: 25px;
+  }
 
-      .text-geo-over h4 {
-        font-size: 25px;
-      }
-    
-      .text-geo-over li {
-        font-size: 12px;
-      }
+  .text-geo-over h4 {
+    font-size: 25px;
+  }
 
+  .text-geo-over li {
+    font-size: 12px;
+  }
 
-      .text-con {
-        font-size: 15px;
-        padding: 20px 0px;
-      }
+  .text-con {
+    font-size: 15px;
+    padding: 20px 0px;
+  }
 
-      .text-con p{
-        font-size: 12px;
-        padding: 10px 20px;
-      }
-    
-      .text-con h4 {
-        font-size: 25px;
-      }
+  .text-con p {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
 
-      .text-con-over h4 {
-        font-size: 25px;
-      }
-    
-      .text-con-over li {
-        font-size: 12px;
-      }
+  .text-con h4 {
+    font-size: 25px;
+  }
 
+  .text-con-over h4 {
+    font-size: 25px;
+  }
 
+  .text-con-over li {
+    font-size: 12px;
+  }
 }
 
+@media screen and (max-width: 320px) {
+  .introduccion p {
+    padding: 10px 0px;
+    font-size: 12px;
+  }
 
-@media screen and (max-width: 320px){
+  /* Seccion de laboratorio */
 
+  .text-lab {
+    font-size: 12px;
+    padding: 0px 1px;
+  }
 
-    
-      .introduccion p {
-        padding: 10px 0px;
-        font-size: 12px;
-      }
-    
-  
-    
-      /* Seccion de laboratorio */
-    
-    
-      .text-lab {
-        font-size: 12px;
-        padding: 0px 1px;
-      }
+  .text-lab p {
+    font-size: 12px;
+    padding: 10px 30px;
+  }
 
-      .text-lab p{
-        font-size: 12px;
-        padding: 10px 30px;
-      }
-    
-      .text-lab h4 {
-        font-size: 25px;
-        padding-bottom: 1px;
-      }
+  .text-lab h4 {
+    font-size: 25px;
+    padding-bottom: 1px;
+  }
 
-      .text-lab-over h4 {
-        font-size: 25px;
-      }
-    
-      .text-lab-over li {
-        font-size: 12px;
-      }
-    
-      /* Seccion de perforaciones */
-    
-    
-      .text-per {
-        font-size: 12px;
-        padding: 50px 10px;
-      }
-    
-      .text-per h4 {
-        font-size: 25px;
-        padding-bottom: 5px;
-      }
+  .text-lab-over h4 {
+    font-size: 25px;
+  }
 
-      .text-per-over h4 {
-        font-size: 25px;
-      }
-    
-      .text-per-over li {
-        font-size: 12px;
-      }
-    
-      /* Seccion geofisica */
-    
-     
-      .text-geo {
-        font-size: 12px;
-        padding: 10px 5px;
-      }
-    
-      .text-geo h4 {
-        font-size: 25px;
-        margin-bottom: -10px;
-      }
+  .text-lab-over li {
+    font-size: 12px;
+  }
 
-      .text-geo-over h4 {
-        font-size: 25px;
-      }
-    
-      .text-geo-over li {
-        text-align: justify;
-        font-size: 12px;
-      }
-    
-       /* SERVICIO DE CONTROL DE OBRA */
-    
+  /* Seccion de perforaciones */
 
+  .text-per {
+    font-size: 12px;
+    padding: 50px 10px;
+  }
 
-      .text-con {
-        font-size: 12px;
-        padding: 20px 5px;
-      }
-    
-      .text-con h4 {
-        font-size: 20px;
-        margin-bottom: -10px;
-      }
+  .text-per h4 {
+    font-size: 25px;
+    padding-bottom: 5px;
+  }
 
-      .text-con-over h4 {
-        font-size: 20px;
-      }
-    
-      .text-con-over li {
-        text-align: justify;
-        font-size: 12px;
-      }
+  .text-per-over h4 {
+    font-size: 25px;
+  }
 
-      
+  .text-per-over li {
+    font-size: 12px;
+  }
 
+  /* Seccion geofisica */
 
+  .text-geo {
+    font-size: 12px;
+    padding: 10px 5px;
+  }
 
+  .text-geo h4 {
+    font-size: 25px;
+    margin-bottom: -10px;
+  }
+
+  .text-geo-over h4 {
+    font-size: 25px;
+  }
+
+  .text-geo-over li {
+    text-align: justify;
+    font-size: 12px;
+  }
+
+  /* SERVICIO DE CONTROL DE OBRA */
+
+  .text-con {
+    font-size: 12px;
+    padding: 20px 5px;
+  }
+
+  .text-con h4 {
+    font-size: 20px;
+    margin-bottom: -10px;
+  }
+
+  .text-con-over h4 {
+    font-size: 20px;
+  }
+
+  .text-con-over li {
+    text-align: justify;
+    font-size: 12px;
+  }
 }

@@ -9,7 +9,7 @@
 
   
   
-  .sticky + .contenido-principal{
+  .sticky + .container-video{
     padding-top: 100px;
     transition: 0.5s;
   }

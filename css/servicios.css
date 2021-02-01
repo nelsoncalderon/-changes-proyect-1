@@ -1,720 +1,654 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+:root {
+  --primario: #1e1f26;
+  --primarioT: #1e1f26c2;
+  --segundarioT: #ffdc409d;
+  --segundario: #ffdd40;
+  --terciario: #f2f2f2;
+  --rojo: #ed3237;
+  --texto2: "Mitr", sans-serif;
+  --texto3: "Didact Gothic", sans-serif;
+}
 
-  :root {
-    --primario:#1E1F26;
-    --segundario: #FFDD40;
-    --terciario: #f2f2f2;
-    --texto1:'Bangers', cursive;
-    --texto2:'Mitr', sans-serif;
-  }
+.container-servicios {
+  width: 100%;
+  height: 300px;
+  background-image: url(../img/2w.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-family: var(--texto2);
+  color: var(--terciario);
+}
 
-  .container-servicios {
-    width: 100%;
-    height: 300px;
-    background-image: url(../img/2w.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    font-family: var(--texto2);
-    color: var(--terciario);
-  }
+.container-servicios h4 {
+  padding-top: 70px;
+  font-size: 50px;
+  text-align: center;
+}
 
-  .container-servicios h4 {
-    padding-top: 70px;
-    font-size: 50px;
-    text-align: center;
-  }
+.N-servicios {
+  padding: 30px 120px;
+}
 
-  .N-servicios{
-    padding: 30px 120px;
-  }
+.N-servicios p {
+  font-size: 20px;
+  padding-bottom: 70px;
+}
 
-  .N-servicios p{
-    font-size: 20px;
-    padding-bottom: 70px;
-  }
+.container-servicios2 {
+  width: 100%;
+  background-color: var(--primario);
+}
 
+.introduccion {
+  text-align: center;
+  color: var(--terciario);
+  padding: 20px 200px;
+  height: 270px;
+  font-family: var(--texto2);
+}
 
-  .container-servicios2{
-    width: 100%;
-    background-color: var(--primario);
-  }
+.introduccion h4 {
+  padding-top: 30px;
+  font-size: 26px;
+}
 
-  .introduccion{
-    text-align: center;
-    color: var(--terciario);
-    padding: 20px 200px;
-    height: 270px;
-    font-family: var(--texto2);
-  }
+.introduccion p {
+  padding: 20px 0px;
+  font-size: 15px;
+  text-align: justify;
+  font-family: var(--texto3);
+}
 
-  .introduccion h4{
-    padding-top: 30px;
-    font-size: 26px;
-  }
+.container-laboratorio {
+  background: var(--segundario);
+  width: 100%;
+  padding: 40px 180px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  text-align: center;
+  font-family: var(--texto2);
+  color: var(--terciario);
+}
 
-  .introduccion p {
-    padding: 20px 0px;
-    font-size: 16px;
-    text-align: justify;
-  }
+.laboratorio {
+  background-image: url(../img/imagen.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 300px;
+  border-radius: 20px 0px 0px 20px;
+}
 
+.container {
+  position: relative;
+  width: 100%;
+}
 
-  .container-laboratorio{
-    background: var(--segundario);
-    width: 100%;
-    padding: 40px 180px;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    text-align: center;
-    font-family: var(--texto2);
-    color: var(--terciario);
-  }
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--primario);
+  overflow: hidden;
+  width: 0;
+  height: 300px;
+  transition: 0.5s ease;
+  overflow-y: scroll;
+}
 
-  .laboratorio {
-    background-image: url(../img/imagen.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 100%;
-    height: 300px;
-   
-  }
+.text-lab-over {
+  padding: 30px 40px;
+  text-align: justify;
+}
 
-  .laboratorio h4{
-    font-size: 26px;
-  }
+.text-lab-over h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
 
-  .laboratorio p {
-    padding: 20px 0px;
-    font-size: 16px;
-    text-align: justify;
-  }
+.text-lab-over li {
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-family: var(--texto3);
+}
 
+.container .text-lab {
+  display: block;
+}
 
-  .container {
-    position: relative;
-    width: 100%;
-  }
-  
- 
-  
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--primario);
-    overflow: hidden;
-    width: 0;
-    height: 300px;
-    transition: .5s ease;
-    overflow-y: scroll;
-  }
+.text-lab {
+  background-color: var(--primario);
+  height: 300px;
+  color: var(--terciario);
+  font-size: 15px;
+  position: absolute;
+  text-align: center;
+  padding: 50px 50px;
+  border-radius: 0px 20px 20px 0px;
+}
 
-  .text-lab-over {
-    padding: 30px 40px;
-    text-align: justify;
-   }
-  
-   .text-lab-over h4{
-     text-align: center;
-     margin-bottom: 20px;
-    font-size: 30px;
-   }
+.text-lab h4 {
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+.text-lab li {
+  text-align: justify;
+  padding: 10px 0px;
+}
 
-   .text-lab-over li {
-    margin-bottom: 20px;
-   }
+.text-lab h4 {
+  font-size: 30px;
+}
 
- 
-  
-  .container  .overlay  {
- 
-  }
+.text-lab p {
+  text-align: justify;
+  padding: 10px 0px;
+  font-size: 15px;
+  font-family: var(--texto3);
+}
 
-  .container  .text-lab {
-    display: block;
-  }
+.overlay::-webkit-scrollbar {
+  width: 10px;
+  background: var(--primario);
+}
 
-  
-  
-  .text-lab {
-    background-color: var(--primario);
-    height: 300px;
-    color: var(--terciario);
-    font-size: 15px;
-    position: absolute;
-    text-align: center;
-    padding: 50px 50px;
-  
-  }
+.overlay::-webkit-scrollbar-thumb {
+  background: var(--terciario);
+}
 
-  .text-lab h4{
-    padding-bottom: 10px;
-    font-size: 30px;
-  }
-  .text-lab li {
-    text-align: justify;
-    padding: 10px 0px;
-  }
-
-
-  .text-lab h4 {
-    font-size: 30px;
-  }
-
-  .text-lab p {
-    text-align: justify;
-    padding: 10px 0px;
-  }
-
-  .overlay::-webkit-scrollbar{
-    width: 10px;
-    background:var(--primario);
-    
-  }
-  
-  .overlay::-webkit-scrollbar-thumb{
-    background: var(--terciario); 
-  }
-
- .abrir button {
+.abrir button {
   position: absolute;
   bottom: 20px;
   right: 20px;
   width: 50px;
   height: 50px;
-  background: #FCDE00;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  background: #fcde00;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   border-radius: 50%;
-  color:black;
+  color: black;
   border: none;
   outline: none;
   font-family: var(--texto2);
   transition: all 300ms;
   transition: 0.5s;
-  }
+}
 
-  .abrir button:hover{
+.abrir button:hover {
+  color: var(--terciario);
+  background-color: var(--primario);
+  border: 2px solid var(--terciario);
+}
 
-    color: var(--terciario);
-    background-color: var(--primario);
-    border: 2px solid var(--terciario);
-  
-  }
+.abrir button:active {
+  transition: all 100ms;
+  transform: scale(0.9);
+  color: black;
+  outline: none;
+}
 
-  .abrir button:active{
-    transition: all 100ms;
-    transform: scale(0.9);
-    color:black;
-    outline: none;
-  }
+.cerrar button {
+  position: absolute;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: 2px solid var(--terciario);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border-radius: 50%;
+  color: var(--terciario);
+  outline: none;
+  font-family: "Viga", sans-serif;
+  transition: all 300ms;
+  transition: 0.5s;
+}
 
-  .cerrar button {
-    position: absolute;
-    right: 20px;
-    width: 30px;
-    height: 30px;
-    background: none;
-    border: 2px solid var(--terciario);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
-    cursor: pointer;
-    border-radius: 50% ;
-    color:var(--terciario);
-    outline: none;
-    font-family: 'Viga', sans-serif;
-    transition: all 300ms;
-    transition: 0.5s;
-  }
+.cerrar button:active {
+  transition: all 100ms;
+  transform: scale(0.9);
+  box-shadow: inset 0 0 20px var(--terciario);
+  color: var(--terciario);
+  outline: none;
+}
 
-  .cerrar button:active{
-    transition: all 100ms;
-    transform: scale(0.9);
-    box-shadow: inset 0 0 20px var(--terciario); 
-    color:var(--terciario);
-    outline: none;
-  }
+.container-perforaciones {
+  background: var(--segundario);
+  width: 100%;
+  padding: 40px 180px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  text-align: center;
+  font-family: var(--texto2);
+  color: var(--terciario);
+}
 
+.perforaciones {
+  background-image: url(../img/perf.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 300px;
+  border-radius: 20px 0px 0px 20px;
+}
 
+.overlay-per {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--primario);
+  overflow: hidden;
+  width: 0;
+  height: 300px;
+  transition: 0.5s ease;
+  overflow-y: scroll;
+}
 
-  .container-perforaciones{
-    background: var(--segundario);
-    width: 100%;
-    padding: 40px 180px;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    text-align: center;
-    font-family: var(--texto2);
-    color: var(--terciario);
-  }
+.text-per-over {
+  padding: 30px 40px;
+  text-align: justify;
+}
 
-  .perforaciones {
-    background-image: url(../img/perf.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 100%;
-    height: 300px;
-   
-  }
+.text-per-over h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
 
-  .perforaciones h4{
-    font-size: 26px;
-  }
+.text-per-over li {
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-family: var(--texto3);
+}
 
-  .perforaciones p {
-    padding: 50px 0px;
-    font-size: 16px;
-    text-align: justify;
-  }
+.container .text-per {
+  display: block;
+}
 
-  
-  .overlay-per {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--primario);
-    overflow: hidden;
-    width: 0;
-    height: 300px;
-    transition: .5s ease;
-    overflow-y: scroll;
-  }
-  
-  .text-per-over {
-    padding: 30px 40px;
-    text-align: justify;
-   }
-  
-   .text-per-over h4{
-     text-align: center;
-     margin-bottom: 20px;
-    font-size: 30px;
-   }
+.text-per {
+  color: var(--terciario);
+  font-size: 15px;
+  position: absolute;
+  text-align: center;
+  display: none;
+  padding: 50px 50px;
+  background-color: var(--primario);
+  height: 300px;
+  border-radius: 0px 20px 20px 0px;
+}
 
-   .text-per-over li {
-    margin-bottom: 20px;
-   }
+.text-per h4 {
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+.text-per li {
+  text-align: justify;
+  padding: 10px 0px;
+}
 
-  .container  .text-per {
-    display: block;
-  }
+.texto-per h4 {
+  font-size: 30px;
+}
 
-  
-  
-  .text-per {
-    color: var(--terciario);
-    font-size: 15px;
-    position: absolute;
-    text-align: center;
-    display: none;
-    padding: 50px 50px;
-    background-color: var(--primario);
-    height: 300px;
-  }
+.text-per p {
+  text-align: justify;
+  padding: 10px 0px;
+  font-size: 15px;
+  font-family: var(--texto3);
+}
 
-  .text-per h4{
-    padding-bottom: 10px;
-    font-size: 30px;
-  }
-  .text-per li {
-    text-align: justify;
-    padding: 10px 0px;
-  }
+.overlay-per::-webkit-scrollbar {
+  width: 10px;
+  background: var(--primario);
+}
 
+.overlay-per::-webkit-scrollbar-thumb {
+  background: var(--terciario);
+}
 
-  .texto-per h4 {
-    font-size: 30px;
-  }
-
-  .text-per p {
-    text-align: justify;
-    padding: 10px 0px;
-  }
-
-  .overlay-per::-webkit-scrollbar{
-    width: 10px;
-    background:var(--primario);
-    
-  }
-  
-  .overlay-per::-webkit-scrollbar-thumb{
-    background: var(--terciario); 
-  }
-
- .abrir-per button {
+.abrir-per button {
   position: absolute;
   bottom: 20px;
   right: 20px;
   width: 50px;
   height: 50px;
   background: var(--segundario);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   border-radius: 50%;
-  color:black;
+  color: black;
   border: none;
   outline: none;
   font-family: var(--texto2);
   transition: all 300ms;
   transition: 0.5s;
-  }
+}
 
-  .abrir-per button:hover{
+.abrir-per button:hover {
+  color: var(--terciario);
+  background-color: var(--primario);
+  border: 2px solid var(--terciario);
+}
 
-    color: var(--terciario);
-    background-color: var(--primario);
-    border: 2px solid var(--terciario);
-  
-  }
+.abrir-per button:active {
+  transition: all 100ms;
+  transform: scale(0.9);
+  color: black;
+  outline: none;
+}
 
-  .abrir-per button:active{
-    transition: all 100ms;
-    transform: scale(0.9);
-    color:black;
-    outline: none;
-  }
+.cerrar-per button {
+  position: absolute;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background: var(--segundario);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border-radius: 50%;
+  color: black;
+  border: none;
+  outline: none;
+  font-family: "Viga", sans-serif;
+  transition: all 300ms;
+  transition: 0.5s;
+}
 
-  .cerrar-per button {
-    position: absolute;
-    right: 20px;
-    width: 30px;
-    height: 30px;
-    background: var(--segundario);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
-    cursor: pointer;
-    border-radius: 50%;
-    color:black;
-    border: none;
-    outline: none;
-    font-family: 'Viga', sans-serif;
-    transition: all 300ms;
-    transition: 0.5s;
-  }
+.container-geofisica {
+  background: var(--segundario);
+  width: 100%;
+  padding: 40px 180px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  text-align: center;
+  font-family: var(--texto2);
+  color: var(--terciario);
+}
 
+.geofisica {
+  background-image: url(../img/geofi.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 300px;
+  border-radius: 20px 0px 0px 20px;
+}
 
+.overlay-geo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--primario);
+  overflow: hidden;
+  width: 0;
+  height: 300px;
+  transition: 0.5s ease;
+  overflow-y: scroll;
+}
 
-     
-  .container-geofisica{
-    background: var(--segundario);
-    width: 100%;
-    padding: 40px 180px;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    text-align: center;
-    font-family: var(--texto2);
-    color: var(--terciario);
-  }
+.text-geo-over {
+  padding: 30px 40px;
+  text-align: justify;
+}
 
-  .geofisica {
-    background-image: url(../img/geofi.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 100%;
-    height: 300px;
-   
-  }
+.text-geo-over h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
 
-  .geofisica h4{
-    font-size: 26px;
-  }
+.text-geo-over li {
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-family: var(--texto3);
+}
 
-  .geofisica p {
-    padding: 50px 0px;
-    font-size: 16px;
-    text-align: justify;
-  }
+.container .text-geo {
+  display: block;
+}
 
-  
-  .overlay-geo {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--primario);
-    overflow: hidden;
-    width: 0;
-    height: 300px;
-    transition: .5s ease;
-    overflow-y: scroll;
-  }
+.text-geo {
+  color: var(--terciario);
+  font-size: 15px;
+  position: absolute;
+  text-align: center;
+  display: none;
+  padding: 50px 50px;
+  height: 300px;
+  background-color: var(--primario);
+}
 
+.text-geo h4 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.text-geo li {
+  text-align: justify;
+  padding: 10px 0px;
+}
 
-  
+.text-geo h4 {
+  font-size: 30px;
+}
 
-  .text-geo-over {
-    padding: 30px 40px;
-    text-align: justify;
-   }
-  
-   .text-geo-over h4{
-     text-align: center;
-     margin-bottom: 20px;
-    font-size: 30px;
-   }
+.text-geo p {
+  text-align: justify;
+  font-family: var(--texto3);
+  font-size: 15px;
+}
 
-   .text-geo-over li {
-    margin-bottom: 20px;
-   }
-  
-  
+.overlay-geo::-webkit-scrollbar {
+  width: 10px;
+  background: var(--primar);
+}
 
+.overlay-geo::-webkit-scrollbar-thumb {
+  background: var(--terciario);
+}
 
-  .container  .text-geo {
-    display: block;
-  }
-
-  
-  
-  .text-geo {
-    color: var(--terciario);
-    font-size: 15px;
-    position: absolute;
-    text-align: center;
-    display: none;
-    padding: 50px 50px;
-    height: 300px;
-    background-color: var(--primario);
-  }
-
-  .text-geo h4{
-    margin-bottom: 10px;
-    font-size: 30px;
-  }
-  .text-geo li {
-    text-align: justify;
-    padding: 10px 0px;
-  }
-
-
-  .text-geo h4 {
-    font-size: 30px;
-  }
-
-  .text-geo p {
-    text-align: justify;
-
-  }
-
-  .overlay-geo::-webkit-scrollbar{
-    width: 10px;
-    background:var(--primar);
-    
-  }
-  
-  .overlay-geo::-webkit-scrollbar-thumb{
-    background: var(--terciario); 
-  }
-
- .abrir-geo button {
+.abrir-geo button {
   position: absolute;
   bottom: 20px;
   right: 20px;
   width: 50px;
   height: 50px;
   background: var(--segundario);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   border-radius: 50%;
-  color:black;
+  color: black;
   border: none;
   outline: none;
   font-family: var(--texto2);
   transition: all 300ms;
   transition: 0.5s;
-  }
+}
 
-  .abrir-geo button:hover{
+.abrir-geo button:hover {
+  color: var(--terciario);
+  background-color: var(--primario);
+  border: 2px solid var(--terciario);
+}
 
-    color: var(--terciario);
-    background-color: var(--primario);
-    border: 2px solid var(--terciario);
-  
-  }
+.abrir-geo button:active {
+  transition: all 100ms;
+  transform: scale(0.9);
+  color: black;
+  outline: none;
+}
 
-  .abrir-geo button:active{
-    transition: all 100ms;
-    transform: scale(0.9);
-    color:black;
-    outline: none;
-  }
+.cerrar-geo button {
+  position: absolute;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background: var(--segundario);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border-radius: 50%;
+  color: black;
+  border: none;
+  outline: none;
+  font-family: "Viga", sans-serif;
+  transition: all 300ms;
+  transition: 0.5s;
+}
 
-  .cerrar-geo button {
-    position: absolute;
-    right: 20px;
-    width: 30px;
-    height: 30px;
-    background: var(--segundario);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
-    cursor: pointer;
-    border-radius: 50%;
-    color:black;
-    border: none;
-    outline: none;
-    font-family: 'Viga', sans-serif;
-    transition: all 300ms;
-    transition: 0.5s;
-  }
+.container-control {
+  background: var(--segundario);
+  width: 100%;
+  padding: 40px 180px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  text-align: center;
+  font-family: var(--texto2);
+  color: var(--terciario);
+}
 
+.control-obras {
+  background-image: url(../img/con-1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 300px;
+  border-radius: 20px 0px 0px 20px;
+}
 
-  
-  .container-control{
-    background: var(--segundario);
-    width: 100%;
-    padding: 40px 180px;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    text-align: center;
-    font-family: var(--texto2);
-    color: var(--terciario);
-  }
+.overlay-con {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--primario);
+  overflow: hidden;
+  width: 0;
+  height: 300px;
+  transition: 0.5s ease;
+  overflow-y: scroll;
+}
 
-  .control-obras {
-    background-image: url(../img/con-1.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 100%;
-    height: 300px;
-   
-  }
+.text-con-over {
+  padding: 30px 40px;
+  text-align: justify;
+}
 
+.text-con-over h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
 
-  
-  .overlay-con {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--primario);
-    overflow: hidden;
-    width: 0;
-    height: 300px;
-    transition: .5s ease;
-    overflow-y: scroll;
-  }
+.text-con-over li {
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-family: var(--texto3);
+}
 
-  
-  .text-con-over {
-    padding: 30px 40px;
-    text-align: justify;
-   }
-  
-   .text-con-over h4{
-     text-align: center;
-     margin-bottom: 20px;
-    font-size: 30px;
-   }
+.container .text-con {
+  display: block;
+}
 
-   .text-con-over li {
-    margin-bottom: 20px;
-   }
-  
+.overlay-con h4 {
+  font-size: 30px;
+}
 
+.overlay-con li {
+  text-align: justify;
+}
 
-  .container  .text-con {
-    display: block;
-  }
+.text-con {
+  color: var(--terciario);
+  font-size: 15px;
+  position: absolute;
+  background-color: var(--primario);
+  text-align: center;
+  display: none;
+  padding: 50px 50px;
+  height: 300px;
+  border-radius: 0px 20px 20px 0px;
+}
 
-  .overlay-con h4{
-    font-size: 30px;
-  }
+.text-con h4 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
 
-  .overlay-con li {
-     text-align: justify;
-  } 
-  
-  .text-con {
-    color: var(--terciario);
-    font-size: 15px;
-    position: absolute;
-    background-color: var(--primario);
-    text-align: center;
-    display: none;
-    padding: 50px 50px;
-    height: 300px;
-  }
+.text-con li {
+  text-align: justify;
+  padding: 10px 0px;
+}
 
-  .text-con h4{
-    margin-bottom: 10px;
-    font-size: 30px;
-  }
+.text-con p {
+  text-align: justify;
+  font-size: 15px;
+  font-family: var(--texto3);
+}
 
-  
-  .text-con li {
-    text-align: justify;
-    padding: 10px 0px;
-  }
+.overlay-con::-webkit-scrollbar {
+  width: 10px;
+  background: var(--primario);
+}
 
-  .text-con p {
-    text-align: justify;
-  }
+.overlay-con::-webkit-scrollbar-thumb {
+  background: var(--terciario);
+}
 
-
-  .overlay-con::-webkit-scrollbar{
-    width: 10px;
-    background:var(--primario);
-    
-  }
-  
-  .overlay-con::-webkit-scrollbar-thumb{
-    background: var(--terciario); 
-  }
-
- .abrir-con button {
+.abrir-con button {
   position: absolute;
   bottom: 20px;
   right: 20px;
   width: 50px;
   height: 50px;
   background: var(--segundario);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   border-radius: 50%;
-  color:black;
+  color: black;
   border: none;
   outline: none;
   font-family: var(--texto2);
   transition: all 300ms;
   transition: 0.5s;
-  }
+}
 
-  .abrir-con button:hover{
+.abrir-con button:hover {
+  color: var(--terciario);
+  background-color: var(--primario);
+  border: 2px solid var(--terciario);
+}
 
-    color: var(--terciario);
-    background-color: var(--primario);
-    border: 2px solid var(--terciario);
-  
-  }
+.abrir-con button:active {
+  transition: all 100ms;
+  transform: scale(0.9);
+  color: black;
+  outline: none;
+}
 
-  .abrir-con button:active{
-    transition: all 100ms;
-    transform: scale(0.9);
-    color:black;
-    outline: none;
-  }
-
-  .cerrar-con button {
-    position: absolute;
-    right: 20px;
-    width: 30px;
-    height: 30px;
-    background: var(--segundario);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
-    cursor: pointer;
-    border-radius: 50%;
-    color:black;
-    border: none;
-    outline: none;
-    font-family: 'Viga', sans-serif;
-    transition: all 300ms;
-    transition: 0.5s;
-  }
-
-
+.cerrar-con button {
+  position: absolute;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background: var(--segundario);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border-radius: 50%;
+  color: black;
+  border: none;
+  outline: none;
+  font-family: "Viga", sans-serif;
+  transition: all 300ms;
+  transition: 0.5s;
+}

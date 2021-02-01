@@ -1,26 +1,24 @@
-
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 :root {
-  --primario:#1E1F26;
-  --segundario: #FFDD40;
+  --primario: #1e1f26;
+  --segundario: #ffdd40;
   --terciario: #f2f2f2;
-  --texto1:'Bangers', cursive;
-  --texto2:'Mitr', sans-serif;
+  --texto1: "Bangers", cursive;
+  --texto2: "Mitr", sans-serif;
 }
-
 
 .container {
   margin: 0;
   width: 100%;
   position: relative;
   color: var(--primario);
-  background-color:var(--segundario);
-  display:grid;
+  background-color: var(--segundario);
+  display: grid;
   padding: 5%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: minmax(400px, auto);
@@ -31,11 +29,19 @@
   font-family: var(--texto2);
 }
 
-.figuraslider2  {
+.figuraslider2 {
   background: var(--primario);
   height: 200px;
   width: 100%;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 41%, 80% 23%, 58% 36%, 31% 21%, 0 25%);
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 41%,
+    80% 23%,
+    58% 36%,
+    31% 21%,
+    0 25%
+  );
   top: -5px;
   position: absolute;
 }
@@ -45,33 +51,31 @@
   padding: 15px;
   border-radius: 5%;
   border: 1px solid var(--segundario);
-  box-shadow: inset 0 0 2px var(--segundario); 
+  box-shadow: inset 0 0 2px var(--segundario);
 }
 
-.introduccion p{
+.introduccion p {
   margin-top: 10px;
 }
 
- .proyectos p{
+.proyectos p {
   margin-top: 10px;
 }
 
-.introduccion h2{
+.introduccion h2 {
   margin-top: 5px;
 }
 
-.proyectos h2{
+.proyectos h2 {
   margin-top: 5px;
 }
 
-
-.introduccion img{
- width: 20%;
- margin-top: 10px;
+.introduccion img {
+  width: 20%;
+  margin-top: 10px;
 }
 
-
-.introduccion a{
+.introduccion a {
   display: inline-block;
   padding: 10px 50px;
   font-weight: 700;
@@ -80,23 +84,23 @@
   text-transform: uppercase;
   text-decoration: none;
   background: var(--primario);
-  transition: color 0.5s, background 0.5s; 
+  transition: color 0.5s, background 0.5s;
   font-family: var(--texto);
   border-radius: 30px;
   margin-top: 15px;
-  font-size: 1.0em;
+  font-size: 1em;
   outline: none;
   font-family: var(--texto2);
 }
 
-.introduccion a:active{
+.introduccion a:active {
   transition: all 100ms;
   transform: scale(0.9);
-  color:black;
+  color: black;
   outline: none;
 }
 
-.introduccion a:hover{
+.introduccion a:hover {
   color: var(--terciario);
   background-color: var(--segundario);
 }
@@ -105,16 +109,15 @@
   background-color: var(--terciario);
   padding: 15px;
   border-radius: 5%;
-  box-shadow: inset 0 0 2px var(--segundario); 
+  box-shadow: inset 0 0 2px var(--segundario);
 }
 
-.proyectos img{
+.proyectos img {
   width: 20%;
   margin-top: 10px;
- }
+}
 
- 
-.proyectos a{
+.proyectos a {
   display: inline-block;
   padding: 10px 50px;
   font-weight: 700;
@@ -123,42 +126,40 @@
   text-transform: uppercase;
   text-decoration: none;
   background: var(--primario);
-  transition: color 0.5s, background 0.5s; 
+  transition: color 0.5s, background 0.5s;
   font-family: var(--texto);
   border-radius: 30px;
   margin-top: 15px;
-  font-size: 1.0em;
+  font-size: 1em;
   outline: none;
   font-family: var(--texto2);
 }
 
-.proyectos a:active{
+.proyectos a:active {
   transition: all 100ms;
   transform: scale(0.9);
-  color:black;
+  color: black;
   outline: none;
 }
 
-.proyectos a:hover{
+.proyectos a:hover {
   color: var(--terciario);
   background-color: var(--segundario);
 }
-
 
 .asesoria {
   background-color: var(--terciario);
   padding: 15px;
   border-radius: 5%;
-  box-shadow: inset 0 0 2px var(--segundario); 
+  box-shadow: inset 0 0 2px var(--segundario);
 }
 
-.asesoria img{
+.asesoria img {
   width: 25%;
   margin-top: 10px;
- }
+}
 
- 
-.asesoria a{
+.asesoria a {
   display: inline-block;
   padding: 10px 50px;
   font-weight: 700;
@@ -167,41 +168,36 @@
   text-transform: uppercase;
   text-decoration: none;
   background: var(--primario);
-  transition: color 0.5s, background 0.5s; 
+  transition: color 0.5s, background 0.5s;
   font-family: var(--texto);
   border-radius: 30px;
   margin-top: 15px;
-  font-size: 1.0em;
+  font-size: 1em;
   outline: none;
   font-family: var(--texto2);
 }
 
-.asesoria a:active{
+.asesoria a:active {
   transition: all 100ms;
   transform: scale(0.9);
-  color:black;
+  color: black;
   outline: none;
 }
 
-.asesoria a:hover{
+.asesoria a:hover {
   color: var(--terciario);
   background-color: var(--segundario);
 }
 
-@media screen and (max-width: 1024px){
-
-
-
+@media screen and (max-width: 1024px) {
 }
 
-@media screen and (max-width: 768px){
-
-.container{
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  gap: 3em;
-}
-
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 3em;
+  }
 
   .introduccion {
     padding: 50px;
@@ -218,34 +214,24 @@
     padding: 50px;
     margin-top: 50px;
   }
-  
-
-
 }
 
-
-
-
-@media screen and (max-width: 375px ){
-
-  .introduccion  a{
+@media screen and (max-width: 375px) {
+  .introduccion a {
     display: inline-block;
     padding: 5px 20px;
     font-size: 0.8em;
-  
   }
 
-  .proyectos  a{
+  .proyectos a {
     display: inline-block;
     padding: 5px 20px;
     font-size: 0.8em;
-  
   }
 
-  .asesoria  a{
+  .asesoria a {
     display: inline-block;
     padding: 5px 20px;
     font-size: 0.8em;
-  
   }
 }

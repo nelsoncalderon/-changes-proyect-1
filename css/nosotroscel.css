@@ -21,11 +21,13 @@
   .text-mision {
     padding: 25px 50px;
     font-size: 15px;
+  
   }
 
   .text-vision {
     padding: 25px 50px;
     font-size: 15px;
+  
   }
 
   /* card equipo */
@@ -90,11 +92,13 @@
   .text-mision {
     padding: 50px 50px;
     font-size: 16px;
+    border-radius: 20px;
   }
 
   .text-vision {
     padding: 50px 50px;
     font-size: 16px;
+    border-radius: 20px;
   }
 
 

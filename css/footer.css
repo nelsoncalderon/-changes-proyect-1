@@ -1,4 +1,3 @@
-
 :root {
   --primario: #1e1f26;
   --primarioT: #1e1f26c2;
@@ -17,22 +16,22 @@
   font-family: var(--texto2);
   color: var(--terciario);
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 2, 150px;
   justify-items: center;
 }
 
-.logotipo{
+.logotipo {
   background-color: var(--primarioT);
   padding: 60px 160px;
   justify-self: stretch;
 }
 
-.logotipo img{
-   width:250px;
+.logotipo img {
+  width: 250px;
 }
 
-.logos{
+.logos {
   background-color: var(--primarioT);
   padding: 60px 160px;
   justify-self: stretch;
@@ -43,25 +42,24 @@
 }
 
 .logos p {
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
 .logos a {
   padding: 20px 10px;
-} 
+}
 
-.logos a:hover{
+.logos a:hover {
   transition: all 100ms;
   transform: scale(0.5);
 }
 
-
-.final{
- background-color: var(--cuarto) ; 
- text-align: center;
- font-family: var(--texto2);
- color: var(--terciario);
- padding: 10px;
+.final {
+  background-color: var(--cuarto);
+  text-align: center;
+  font-family: var(--texto2);
+  color: var(--terciario);
+  padding: 10px;
 }
 
 .lema {
@@ -74,20 +72,15 @@
   height: 100px;
 }
 
-@media screen and (max-width: 1024px ){
-
-  .logos{
+@media screen and (max-width: 1024px) {
+  .logos {
     padding: 60px 10px;
   }
-
 }
 
-@media screen and (max-width: 768px ) {
-
+@media screen and (max-width: 768px) {
   .container-footer {
-    
     grid-template-columns: 0% 100%;
-   
   }
 
   .logos {
@@ -96,43 +89,29 @@
   }
 
   .logotipo {
-
     background: none;
-   }
+  }
 
-.logotipo img{
-
- display: none;
+  .logotipo img {
+    display: none;
+  }
 }
-
-}
-@media screen and (max-width: 425px ){
-
-.logos{
+@media screen and (max-width: 425px) {
+  .logos {
     padding: 40px 30px;
-  
-}
-
-.logotipo{
-
-  padding: 40px 30px;
- 
-}
-  
-  .final p {
-    font-size: 10px;
   }
 
-}
-
-@media screen and (max-width: 320px ){
-
-  
-
-
+  .logotipo {
+    padding: 40px 30px;
+  }
 
   .final p {
     font-size: 10px;
   }
+}
 
+@media screen and (max-width: 320px) {
+  .final p {
+    font-size: 10px;
+  }
 }
